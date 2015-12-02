@@ -1,0 +1,14 @@
+{
+  "name": "file-cleanup1",
+  "version": "0.1.0",
+  "author": "Brian Schonecker",
+  "summary": "Delete unwanted files in directories based on file name and date. Similar to PuppetLabs tidy resource.",
+  "license": "Apache 2.0",
+  "source": "https://github.com/bschonec/puppet-file-cleanup.git",
+  "issues_url": "https://github.com/bschonec/puppet-file-cleanup/issues",
+  "project_page": "https://github.com/bschonec/puppet-file-cleanup",
+  "dependencies": [
+    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"}
+  ]
+}
+
