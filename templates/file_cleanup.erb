@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# This file managed by Puppet.
+# DO NOT MODIFY!
+
+<% [@file_hash].flatten.compact.each do |key_details| -%>
+if [ -d <%= key_details['path'] %> ]; then
+  find <%= key_details['path'] %> -type f -iname <%= key_details['name'] %> -mtime <%= key_details['mtime'] %> -delete
+fi
+
+<% end %>
+
